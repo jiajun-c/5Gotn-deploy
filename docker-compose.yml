@@ -23,3 +23,10 @@ services:
       - "./config.yaml:/config.yaml"
     depends_on:
       - db
+  frontend:
+    image: zzj021205/5gotndocker
+    container_name: front
+    restart: on-failure
+    port:
+      - "28081:8080"
+
