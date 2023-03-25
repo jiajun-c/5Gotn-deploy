@@ -27,6 +27,6 @@ services:
     image: zzj021205/5gotndocker
     container_name: front
     restart: on-failure
-    port:
+    ports:
       - "28081:8080"
 
